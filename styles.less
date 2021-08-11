@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    min-width: 950px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.header-background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/header-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header-nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+
+    // &__logo {
+
+    // }
+
+    &__item a {
+        font-size: 21px;
+        color: #ffffff;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+
+    &__wrapper {
+        width: 100%;
+        height: 32%;
+        background-color: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(5px);
+    }
+}
+
+.header-content {
+    width: 100%;
+    height: 41%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    &__wrapper {
+        width: 100%;
+        height: 41vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &__text {
+        font-size: 23px;
+        color: #ffffff;
+    }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        font-size: 80px;
+        color: #ffffff;
+        font-weight: 600;
+        line-height: 80px;
+        letter-spacing: 0.1em;
+    }
+
+    &__btn {
+        width: 270px;
+        height: 60px;
+        font-size: 30px;
+        border-radius: 22px;
+        border: 1.5px solid #ffffff;
+        filter: drop-shadow(0px 0px 20px #FFFFFF);
+        background: linear-gradient(90deg, rgba(136, 96, 208, 0.5) 0%, rgba(86, 128, 233, 0.335) 56.07%);
+        box-shadow: 15px 4px 25px 5px rgba(136, 96, 208, 0.25), 0px 0px 250px rgba(245, 245, 245, 0.25);
+        //backdrop-filter: blur(1px);
+        color: #ffffff;
+        margin-left: 4vw;
+        cursor: pointer;
+    }
+}
+
+.header-bottom {
+    width: 100%;
+    height: 27%;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+
+    &__down {
+        border: solid #ffffff;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 9px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+        top: 80%;
+    }
+
+}
+.test {
+    width: 100%;
+    height: 600px;
+    background: red;
+}
