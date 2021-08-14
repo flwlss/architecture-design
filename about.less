@@ -1,0 +1,83 @@
+.about {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/fon2.png);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-company {
+    padding-left: 15%;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+        width: 90%;
+        height: 82vh;
+    }
+
+    &__title {
+        padding: 0;
+        margin: 0;
+        font-size: 3vw;
+        color: #ffffff;
+        margin-bottom: 15px;
+        margin-left: 2vw;
+
+        @media (max-width:769px) {
+            font-size: 30px;
+        }
+    }
+
+    &__subtitle {
+        padding: 0;
+        margin: 0;
+        font-size: 2vw;
+        color: #ffffff;
+        margin-bottom: 15px;
+        font-weight: bolder;
+
+        @media (max-width:769px) {
+            font-size: 20px;
+        }
+    }
+
+    &__text {
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        font-size: 2.5vh;
+        
+        @media (max-width:769px) {
+            font-size: 14px;
+        }
+    }
+}
+
+.about-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__line {
+        width: 2px;
+        height: 82%;
+        background-color: #fff;
+        position: absolute;
+    }
+}
+
+.right-content {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    padding-right: 15%;
+}
