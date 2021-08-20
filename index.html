@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="about.css" />
-    <link rel="stylesheet" href="progress.css" />
-    <link rel="stylesheet" href="contacts.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/progress.css" />
+    <link rel="stylesheet" href="styles/contacts.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <link rel="stylesheet" href="styles/services.css" />
 </head>
 <header class="header-background">
     <div class="header-nav__wrapper">
@@ -88,7 +89,7 @@
                         <div class="about-each__slider">
                             <div class="about-each__align">
                                 <div class="about-each__photo-wrapper">
-                                    <img class="about-each__photo" src="img/julia.png" alt="">
+                                    <img class="about-each__photo" src="img/julia.jpg" alt="">
                                     <div class="test">
                                         <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                                         <a class="next" onclick="plusSlides(1)">&#10095</a>
@@ -113,7 +114,7 @@
                         <div class="about-each__slider">
                             <div class="about-each__align">
                                 <div class="about-each__photo-wrapper">
-                                    <img class="about-each__photo" src="img/andrey.png" alt="">
+                                    <img class="about-each__photo" src="img/andrey.jpg" alt="">
                                     <div class="test">
                                         <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                                         <a class="next" onclick="plusSlides(1)">&#10095</a>
@@ -136,7 +137,7 @@
                         <div class="about-each__slider">
                             <div class="about-each__align">
                                 <div class="about-each__photo-wrapper">
-                                    <img class="about-each__photo" src="img/nikita.png" alt="">
+                                    <img class="about-each__photo" src="img/nikita.jpg" alt="">
                                     <div class="test">
                                         <a class="prev" onclick="plusSlides(-1)">&#10094</a>
                                         <a class="next" onclick="plusSlides(1)">&#10095</a>
@@ -184,6 +185,148 @@
             <div class="progress__item">
                 <span class="progress__title">13+</span>
                 <span class="progress__amount">лет опыта</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-and-price">
+        <div class="services">
+            <p class="services__title">услуги и цены</p>
+            <div class="services__services">
+                <div class="services__services-wrapper">
+                    <div class="services__element">
+                        <p class="services__subtitle">дизайн проект</p>
+                        <p class="services__text">
+                            Дизайн проект интерьера представляет собой
+                            комплексное решение по организации пространства,
+                            состоящее из разработки концепции будущего интерьера,
+                            подбора всех отделочных материалов и мебели, а также
+                            полного набора рабочих чертежей и 3D визуализации.</p>
+                        <a>
+                            <div class="services__arrow-wrapper">
+                                <span class="services__arrow"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__element">
+                        <p class="services__subtitle">планировочные решения</p>
+                        <p class="services__text">
+                            Услуга перепланировки предполагает разработку трех
+                            вариантов расположения мебели и оборудования в рамках
+                            существующей площади объекта. Разработка вариантов
+                            ведется с учетом соблюдения всех СНИПов и норм для
+                            дальнейшего согласования утвержденного планировочного
+                            решения в необходимых инстанциях.</p>
+                        <a>
+                            <div class="services__arrow-wrapper">
+                                <span class="services__arrow"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__element">
+                        <p class="services__subtitle">авторский надзор</p>
+                        <p class="services__text">
+                            Авторский надзор представляет собой контроль автора
+                            проекта за его реализацией. Дизайнер решает все
+                            возникающие в процессе ремонта вопросы по проекту,
+                            а также ведет контроль своевременной поставки материалов
+                            на объект, рабочих чертежей и 3D визуализации.</p>
+                        <a>
+                            <div class="services__arrow-wrapper">
+                                <span class="services__arrow"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__element">
+                        <p class="services__subtitle">декорирование</p>
+                        <p class="services__text">
+                            Декорирование – это завершающий штрих
+                            в разработке дизайна вашего интерьера,
+                            который предполагает подбор аксессуаров,
+                            текстиля, картин и других декоративных элементов.</p>
+                        <a>
+                            <div class="services__arrow-wrapper">
+                                <span class="services__arrow"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__element">
+                        <p class="services__subtitle">айдентика (для коммерческих проектов)</p>
+                        <p class="services__text">
+                            Мы уверены, что одними из ключевых факторов
+                            успеха любого заведения являются фирменный
+                            стиль и айдентика. Только комплексное решение
+                            позволяет создать успешный завершенный образ Вашего бизнеса.</p>
+                        <a>
+                            <div class="services__arrow-wrapper">
+                                <span class="services__arrow"></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="services__element">
+                        <p class="services__subtitle">архитектурное проектирование</p>
+                        <p class="services__text">
+                            Основным направлением архитектурного проектирования
+                            нашей компании являются частные дома. В ходе
+                            разработки общей архитектурной концепции будущего
+                            дома, важно не только спроектировать внешний облик
+                            здания, но и грамотно организовать внутреннее пространство.
+                            Это позволяет максимально рационально и гармонично
+                            спланировать пространство для разработки последующего дизайна интерьера.</p>
+                        <a>
+                            <div class="services__arrow-wrapper">
+                                <span class="services__arrow"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stages">
+            <p class="stages__title">C чего начать с нами работу</p>
+            <div class="stages__element">
+                <p class="stages__subtitle">Знакомство</p>
+                <p class="stages__text">
+                    Если вы в первый раз заказываете дизайн-проект, 
+                    то у вас наверняка очень много вопросов, и 
+                    мы с радостью ответим на каждый из них. 
+                    Вы можете написать нам в WhatsApp, Instagram Direct или позвонить.</p>
+            </div>
+            <div class="stages__element">
+                <p class="stages__subtitle">Расскажите нам о вашем проекте</p>
+                <p class="stages__text">
+                    Чтобы мы могли сделать вам коммерческое предложение, 
+                    нам необходимо узнать площадь вашего объекта, 
+                    и какой вид услуги вам нужен - дизайн жилого либо 
+                    коммерческого интерьера или архитектурное проектирование.</p>
+            </div>
+            <div class="stages__element">
+                <p class="stages__subtitle">Мы расскажем о процессе</p>
+                <p class="stages__text">
+                    Из чего состоит проект? Какие этапы 
+                    работ предстоит пройти? Как будет проходить 
+                    строительство? Сколько будет стоит реализация? 
+                    И еще много вопросов, на которые мы с 
+                    удовольствием вам ответим.</p>
+            </div>
+            <div class="stages__element">
+                <p class="stages__subtitle">Встреча</p>
+                <p class="stages__text">
+                    Если вы из Санкт-Петербурга, 
+                    то встречу назначаем у нас в офисе. 
+                    Если вы из другого города, то встречу 
+                    проводим по видео связи. На этой встрече 
+                    мы с вами детально обсуждаем ваш будущий 
+                    проект и на примерах показываем специфику нашей работы.</p>
+            </div>
+            <div class="stages__element">
+                <p class="stages__subtitle">Заключение контракта</p>
+                <p class="stages__text">
+                    Когда вы получили всю необходимую информацию 
+                    и составили в голове представление, 
+                    о том как будет проходить работа, вам остается 
+                    принять решение, после которого мы подпишем 
+                    контракт и начнем создавать проект вашей мечты.</p>
             </div>
         </div>
     </section>
