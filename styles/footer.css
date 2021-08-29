@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   background-image: url(../img/bg-footer.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 .footer__wrapper {
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +19,12 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.footer__logo {
+  width: 12%;
+}
+.footer__logo__logo {
+  width: 100%;
 }
 .footer__rights {
   display: flex;
@@ -33,5 +39,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4vw;
+}
+.footer__whatsapp-wrapper {
+  width: 15%;
+}
+.footer__whatsapp-wrapper__whatsapp {
+  width: 100%;
+}
+.footer__insta-wrapper {
+  width: 13%;
+}
+.footer__insta-wrapper__insta {
+  width: 100%;
+}
+.footer__tg-wrapper {
+  width: 13%;
+}
+.footer__tg-wrapper__tg {
+  width: 100%;
 }
