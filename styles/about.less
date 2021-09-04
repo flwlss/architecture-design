@@ -1,135 +1,122 @@
 .about {
-    width: 100%;
-    height: 120vh;
-    background-color: gray;
+  width: 100%;
+  background-color: grey;
+}
 
-    &__content {
-        width: 100%;
-        height: 120vh;
-    }
-
-    &__content {
-        display: flex;
-    }
-
-    &__wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.about-wrapper {
+  width: 100%;
+  display: flex;
 }
 
 .about-company {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 45%;
+  border-right: 1px solid #ffffff;
+  padding: 5vh 5% 0 0;
+  margin: 7vh 0;
 
-    &__title {
-        width: 6vw;
-        margin: 0;
-        padding: 0;
-        color: #ffffff;
-        font-size: 2vw;
-        border-bottom: 1px solid #ffffff;
-        text-transform: uppercase;
-    }
-
-    &__subtitle {
-        margin: 0;
-        padding: 0;
-        color: #ffffff;
-        font-size: 2vw;
-        font-weight: bolder;
-        padding-bottom: 2vh;
-        padding-top: 2vh;
-    }
-
-    &__text {
-        margin: 0;
-        padding: 0;
-        color: #ffffff;
-        font-size: 1.6vw;
-    }
-
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.about-line {
-    width: 2px;
-        height: 90%;
-    display: flex;
-    align-items: center;
-
-    &__line {
-        width: 2px;
-        height: 90%;
-        background-color: #fff;
-    }
-}
-
-.about-each {
-    width: 45%;
-    height: 80%;
-
-    &__align {
-        display: flex;
-        justify-content: center;
-    }
-
-    &__photo-wrapper {
-        
-        width: 50%;
-        border: 2px solid #ffffff;
-    }
-
-    &__photo {
-        height: 100%;
-        width: 100%;
-    }
-
-    &__title {
-        margin: 0;
-        padding: 0;
-        color: #ffffff;
-        text-align: right;
-        font-size: 2vw;
-        margin-bottom: 2vh;
-        margin-top: 2vh;
-        font-weight: bolder;
-    }
-
-    &__text {
-        margin: 0;
-        padding: 0;
-        color: #ffffff;
-        text-align: right;
-        font-size: 1.3vw;
-        margin-bottom: 2vh;
-    }
-}
-
-.prev, .next {
-    cursor: pointer;
+  &__title {
+    width: 145px;
+    margin: 0;
+    font-size: 50px;
     color: #ffffff;
-    font-weight: bold;
-    font-size: 2vw;
-    transition: 0.6s ease;
-    border-radius: 5px;
-    width: 40px;
-    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ffffff;
+
+    @media (max-width:1366px) {
+      width: 90px;
+      font-size: 30px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 45px;
+    color: #ffffff;
+    margin: 0;
+    font-weight: bolder;
+    margin: 2vh 0;
+
+    @media (max-width:1366px) {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    font-size: 30px;
+    color: #ffffff;
+    margin: 0;
+    
+    @media (max-width:1366px) {
+      font-size: 20px;
+    }
+  }
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-.test {
+.about-us {
+  width: 45%;
+  padding: 5vh 0 0 5%;
+  margin: 7vh 0;
+
+  &__align {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__photo-wrapper {
+    width: 50%;
+    border: 3px solid #ffffff;
+  }
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__arrow {
     position: relative; 
     display: flex;
     height: 0;
     justify-content: space-around;
     bottom: 15%;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: bolder;
+    text-align: right;
+    margin: 2vh 0;
+
+    @media (max-width:1366px) {
+      font-size: 25px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 2vh;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: right;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width:1366px) {
+      font-size: 18px;
+    }
+  }
 }
+
+.prev, .next {
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2vw;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  width: 40px;
+  text-align: center;
+}
+
