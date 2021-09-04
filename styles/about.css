@@ -61,6 +61,11 @@
   width: 50%;
   border: 3px solid #ffffff;
 }
+@media (max-width: 1024px) {
+  .about-us__photo-wrapper {
+    width: 70%;
+  }
+}
 .about-us__photo {
   height: 100%;
   width: 100%;
@@ -71,11 +76,6 @@
   height: 0;
   justify-content: space-around;
   bottom: 15%;
-}
-@media (max-width: 1024px) {
-  .about-us__arrow {
-    bottom: 18%;
-  }
 }
 .about-us__title {
   margin: 0;

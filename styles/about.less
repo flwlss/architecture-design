@@ -64,6 +64,10 @@
   &__photo-wrapper {
     width: 50%;
     border: 3px solid #ffffff;
+
+    @media (max-width:1024px) {
+      width: 70%;
+    }
   }
 
   &__photo {
@@ -78,9 +82,9 @@
     justify-content: space-around;
     bottom: 15%;
 
-    @media (max-width:1024px) {
-      bottom: 18%;
-    }
+    // @media (max-width:1024px) {
+    //   bottom: 18%;
+    // }
   }
 
   &__title {
