@@ -47,6 +47,10 @@
 .portfolio-slider {
   margin-left: 15%;
 }
+.test {
+  display: flex;
+  flex-direction: column;
+}
 .portfolio-opacity {
   width: 98%;
   background-color: rgba(0, 0, 0, 0.1);
@@ -113,7 +117,7 @@
   transform: rotate(-45deg);
 }
 .portfolio-photo {
-  width: 30%;
+  width: 35%;
 }
 .portfolio-photo__photo {
   width: 100%;
