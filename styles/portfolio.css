@@ -1,0 +1,120 @@
+.portfolio {
+  width: 100%;
+  background-image: url(../img/bg-portfolio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.portfolio__title {
+  margin: 0;
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+  margin: 1vh 0 2vh 0;
+}
+.portfolio__text {
+  margin: 0;
+  font-size: 23px;
+  width: 62%;
+  color: #ffffff;
+  letter-spacing: 0.1em;
+}
+.portfolio-header {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vh 15%;
+}
+.portfolio-header__title {
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+.portfolio-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.portfolio-line__line {
+  width: 1px;
+  height: 7vh;
+  background-color: #fff;
+  position: absolute;
+}
+.portfolio-slider {
+  margin-left: 15%;
+}
+.portfolio-opacity {
+  width: 98%;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-left: 2%;
+}
+.portfolio-basics {
+  display: flex;
+  align-items: center;
+  margin-left: 2%;
+}
+.portfolio-basics__line {
+  width: 4%;
+  height: 2px;
+  background-color: #5AB9EA;
+}
+.portfolio-basics__text {
+  font-size: 18px;
+  color: #5AB9EA;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 1vh 1% 0 1%;
+}
+.portfolio-arrow {
+  width: 50%;
+  margin-bottom: 1vh;
+  padding: 1vh 0;
+  display: flex;
+  align-items: center;
+}
+.portfolio-arrow__text {
+  margin: 0;
+  font-size: 18px;
+  color: #5AB9EA;
+  letter-spacing: 0.1em;
+  margin-right: 2%;
+}
+.portfolio-arrow__arrow {
+  position: relative;
+  width: 3%;
+  height: 2px;
+  background-color: #5680E9;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.portfolio-arrow__arrow:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: -3px;
+  right: -2px;
+  background-color: #5680E9;
+  transform: rotate(45deg);
+}
+.portfolio-arrow__arrow:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 3px;
+  right: -2px;
+  background-color: #5680E9;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-45deg);
+}
+.portfolio-photo {
+  width: 30%;
+}
+.portfolio-photo__photo {
+  width: 100%;
+}
