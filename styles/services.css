@@ -10,20 +10,25 @@
   background-size: cover;
 }
 .services__title {
-  width: 16vw;
+  width: 315px;
   border-bottom: 1px solid #1F2833;
   color: #1F2833;
-  font-size: 2vw;
+  font-size: 40px;
   text-transform: uppercase;
   font-weight: bolder;
-  text-align: center;
-  margin: 5% 0 5% 30%;
+  margin: 4vh 0 4vh 30%;
+}
+@media (max-width: 1366px) {
+  .services__title {
+    font-size: 30px;
+    width: 235px;
+  }
 }
 .services__services {
   width: 65%;
   border-right: 2px solid #1F2833;
   border-left: 2px solid #1F2833;
-  margin: 0 5% 5% 30%;
+  margin: 0 5% 4vh 30%;
   display: flex;
   justify-content: center;
 }
@@ -42,26 +47,36 @@
   padding: 0;
   text-transform: uppercase;
   color: #1F2833;
-  font-size: 1.5vw;
+  font-size: 30px;
   font-weight: bolder;
   letter-spacing: 0.06em;
 }
+@media (max-width: 1366px) {
+  .services__subtitle {
+    font-size: 25px;
+  }
+}
 .services__text {
   color: #1F2833;
-  font-size: 1.2vw;
+  font-size: 20px;
   font-weight: bolder;
 }
+@media (max-width: 1366px) {
+  .services__text {
+    font-size: 17px;
+  }
+}
 .services__arrow-wrapper {
-  width: 4.5vw;
-  height: 2vw;
+  width: 14%;
+  height: 3.5vh;
   display: flex;
   align-items: center;
-  padding-left: 86%;
+  margin-left: 86%;
   cursor: pointer;
 }
 .services__arrow {
   position: relative;
-  width: 4vw;
+  width: 100%;
   height: 2px;
   background-color: #5680E9;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -107,28 +122,40 @@
   background: grey;
 }
 .stages__title {
-  width: 26vw;
   color: #ffffff;
-  font-size: 2vw;
+  font-size: 35px;
   font-weight: bolder;
-  margin: 5% 0 5% 20%;
+  margin: 4vh 0 4vh 20%;
+}
+@media (max-width: 1366px) {
+  .stages__title {
+    font-size: 25px;
+  }
 }
 .stages__element {
-  margin: 5% 30% 5% 10%;
+  margin: 4vh 30% 4vh 10%;
 }
 .stages__subtitle {
   margin: 0;
-  padding: 0;
   color: #ffffff;
-  font-size: 1.5vw;
+  font-size: 25px;
   font-weight: bolder;
   letter-spacing: 0.1em;
 }
+@media (max-width: 1366px) {
+  .stages__subtitle {
+    font-size: 20px;
+  }
+}
 .stages__text {
   color: #ffffff;
-  font-size: 1.2vw;
-  padding-bottom: 10vh;
+  font-size: 20px;
   letter-spacing: 0.06em;
+}
+@media (max-width: 1366px) {
+  .stages__text {
+    font-size: 17px;
+  }
 }
 .form-close-one,
 .form-close-two,
@@ -137,20 +164,56 @@
 .form-close-five,
 .form-close-six {
   width: 7%;
-  height: 7vh;
-  background-color: rebeccapurple;
-  float: right;
+  height: 3.5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 0 1vh 4%;
+}
+.form-close {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #5680E9;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.form-close:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 3px;
+  left: -2px;
+  background-color: #5680E9;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(45deg);
+}
+.form-close:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: -3px;
+  left: -2px;
+  background-color: #5680E9;
+  transform: rotate(-45deg);
 }
 .form-wrapper {
   display: flex;
   align-items: center;
 }
 .form-text {
-  padding: 5% 4%;
+  padding: 4vh 4% 1vh;
   width: 40%;
   color: #000000;
   letter-spacing: 0.06rem;
-  font-size: 1vw;
+  font-size: 20px;
+}
+@media (max-width: 1366px) {
+  .form-text {
+    font-size: 15px;
+  }
 }
 .form-cost {
   width: 25%;
@@ -160,10 +223,15 @@
   text-align: center;
   border-bottom: 1px solid #000000;
   letter-spacing: 0.1rem;
-  margin-bottom: 7%;
-  padding-bottom: 7%;
+  margin-bottom: 2vh;
+  padding-bottom: 2vh;
   font-weight: bolder;
-  font-size: 1.3vw;
+  font-size: 25px;
+}
+@media (max-width: 1366px) {
+  .form-cost__cost {
+    font-size: 20px;
+  }
 }
 .form-cost__cost:last-child {
   border: none;
@@ -188,8 +256,11 @@
   animation-name: bounce;
   animation-duration: 0.6s;
   position: fixed;
-  top: 10%;
-  left: 15%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 65%;
   background-color: white;
   box-shadow: 0 0 15px rgba(90, 70, 70, 0.7);
