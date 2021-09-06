@@ -1,6 +1,7 @@
 .about {
   width: 100%;
   background-color: grey;
+  scroll-margin-top: 10vh;
 }
 .about-wrapper {
   width: 100%;

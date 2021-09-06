@@ -17,22 +17,28 @@
 </head>
 
 <header class="header-background">
-  <div class="header-top">
-    <div class="container">
-      <nav class="header-nav">
-        <a href="#" class="header-nav__logo-wrapper">
-          <img class="header-nav__logo" src="./img/logo.png" alt="Architecture Design">
-          <p class="header-nav__name">ARCHITECTURE <br>DESIGN STUDIO</p>
-        </a>
-        <div class="header-nav__item-wrapper">
-          <li class="header-nav__item">о нас</li>
-          <li class="header-nav__item">портфолио</li>
-          <li class="header-nav__item">услуги и цены</li>
-          <li class="header-nav__item">контакты</li>
-          <li class="header-nav__item">+7 (923) 465-99-77</li>
-        </div>
-      </nav>
+  <nav class="header-nav">
+    <a href="#header" class="header-nav__logo-wrapper">
+      <img class="header-nav__logo" src="./img/logo.png" alt="Architecture Design">
+      <p class="header-nav__name">ARCHITECTURE <br>DESIGN STUDIO</p>
+    </a>
+    <div class="header-nav__item-wrapper">
+      <a href="#about">
+        <li class="header-nav__item">о нас</li>
+      </a>
+      <a href="#portfolio">
+        <li class="header-nav__item">портфолио</li>
+      </a>
+      <a href="#services">
+        <li class="header-nav__item">услуги и цены</li>
+      </a>
+      <a href="#contacts">
+        <li class="header-nav__item">контакты</li>
+      </a>
+      <li class="header-nav__item">+7 (923) 465-99-77</li>
     </div>
+  </nav>
+  <div id="header" class="header-top">
   </div>
   <div class="header-content">
     <div class="container">
@@ -48,7 +54,7 @@
 
 
 <body>
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <div class="about-wrapper">
         <div class="about-company">
@@ -176,7 +182,7 @@
     </div>
   </section>
 
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <div class="portfolio-header">
       <p class="portfolio-header__title">дизайн интерьера</p>
       <div class="portfolio-line">
@@ -188,37 +194,44 @@
       </div>
       <p class="portfolio-header__title">фитодизайн</p>
     </div>
+
+
     <div class="portfolio-slider">
-      <div class="portfolio-opacity">
-        <div class="portfolio-basics">
-          <span class="portfolio-basics__line"></span>
-          <p class="portfolio-basics__text">design basics</p>
-          <span class="portfolio-basics__line"></span>
-        </div>
-        <p class="portfolio__title">Дизайн интерьера</p>
-        <p class="portfolio__text">
-          Современный дизайн интерьера — это решение задач.
-          Задач бюджета, функциональности, красоты и много
-          другого. В создании дизайна интерьера мы используем
-          аналитический подход, он позволяет нам проектировать,
-          как частное жилье, так и офисы, кафе, рестораны, бары,
-          галереи, музеи и т. д.<br><br>
-          Мы исходим из тех задач, которые перед нами ставит
-          клиент и пространство интерьера. Думаем о том, как
-          рационально использовать бюджет на реализацию и
-          создать уникальный дизайн под конкретную задачу.</p>
-        <div class="portfolio-arrow">
-          <p class="portfolio-arrow__text">portfolio</p>
-          <span class="portfolio-arrow__arrow"></span>
-        </div>
-      </div>
-      <div class="portfolio-photo">
+      <!-- <div class="portfolio-photo">
         <img class="portfolio-photo__photo" src="./img/portfolio-photo.jpg" alt="">
+      </div> -->
+      <div class="test">
+        <div class="portfolio-opacity">
+          <div class="portfolio-basics">
+            <span class="portfolio-basics__line"></span>
+            <p class="portfolio-basics__text">design basics</p>
+            <span class="portfolio-basics__line"></span>
+          </div>
+          <p class="portfolio__title">Дизайн интерьера</p>
+          <p class="portfolio__text">
+            Современный дизайн интерьера — это решение задач.
+            Задач бюджета, функциональности, красоты и много
+            другого. В создании дизайна интерьера мы используем
+            аналитический подход, он позволяет нам проектировать,
+            как частное жилье, так и офисы, кафе, рестораны, бары,
+            галереи, музеи и т. д.<br><br>
+            Мы исходим из тех задач, которые перед нами ставит
+            клиент и пространство интерьера. Думаем о том, как
+            рационально использовать бюджет на реализацию и
+            создать уникальный дизайн под конкретную задачу.</p>
+          <div class="portfolio-arrow">
+            <p class="portfolio-arrow__text">portfolio</p>
+            <span class="portfolio-arrow__arrow"></span>
+          </div>
+        </div>
+        <div class="portfolio-right-photo">
+          <img class="portfolio-right-photo__photo" src="./img/portfolio-right.jpg" alt="">
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="services-and-price">
+  <section id="services" class="services-and-price">
     <div class="services">
       <p class="services__title">услуги и цены</p>
       <div class="services__services">
@@ -546,7 +559,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section id="contacts" class="contacts">
     <div class="container">
       <p class="contacts__title">контакты</p>
       <div class="contacts-wrapper">

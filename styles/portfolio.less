@@ -3,6 +3,7 @@
   background-image: url(../img/bg-portfolio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  scroll-margin-top: 10vh;
 
   &__title {
     margin: 0;
@@ -52,17 +53,32 @@
 }
 
 .portfolio-slider {
-  margin-left: 15%;
-}
-.test {
+ // width: 100%;
   display: flex;
-  flex-direction: column;
 }
+
+.test {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
 .portfolio-opacity {
-  width: 98%;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding-left: 2%;
-//  display: flex;
+  position: absolute;
+  width: 84%;
+  background: rgba(0, 0, 0, 0.3);
+  margin-left: 15%;
+  padding: 1% 0 1% 1%;
+}
+
+.portfolio-right-photo {
+  width: 50%;
+  margin-left: 50%;
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .portfolio-basics {
@@ -130,13 +146,5 @@
       box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
       transform: rotate(-45deg);
     }
-  }
-}
-
-.portfolio-photo {
-  width: 35%;
-
-  &__photo {
-    width: 100%;
   }
 }

@@ -1,3 +1,22 @@
+// plavniy scroll
+// plavniy scroll
+// plavniy scroll
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const blockID = anchor.getAttribute('href')
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+
+// about slider
+// about slider
+// about slider
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,7 +44,9 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block"
 }
 
-
+// open/close forms
+// open/close forms
+// open/close forms
 var arrowOne = document.querySelector(".arrow-one");
 var openOne = document.querySelector(".form-one");
 var closeOne = document.querySelector(".form-close-one");
