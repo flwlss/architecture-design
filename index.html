@@ -182,47 +182,128 @@
 
   <section id="portfolio" class="portfolio">
     <div class="portfolio-header">
-      <p class="portfolio-header__title">дизайн интерьера</p>
+      <p class="portfolio-header__title" onclick="design()">дизайн интерьера</p>
       <div class="portfolio-line">
         <span class="portfolio-line__line"></span>
       </div>
-      <p class="portfolio-header__title">архитектурное <br> проектирование</p>
+      <p class="portfolio-header__title" onclick="archidesign()">архитектурное <br> проектирование</p>
       <div class="portfolio-line">
         <span class="portfolio-line__line"></span>
       </div>
-      <p class="portfolio-header__title">фитодизайн</p>
+      <p class="portfolio-header__title" onclick="fitodesign()">фитодизайн</p>
     </div>
 
-    <div class="portfolio-slider">
-      <!-- <div class="portfolio-photo">
-        <img class="portfolio-photo__photo" src="./img/portfolio-photo.jpg" alt="">
-      </div> -->
-      <div class="test">
-        <div class="portfolio-opacity">
-          <div class="portfolio-basics">
-            <span class="portfolio-basics__line"></span>
-            <p class="portfolio-basics__text">design basics</p>
-            <span class="portfolio-basics__line"></span>
+    <div class="portfolio-design" id="design">
+      <div class="portfolio-slider">
+        <div class="portfolio-content">
+          <div class="portfolio-opacity">
+            <div class="portfolio-basics">
+              <span class="portfolio-basics__line"></span>
+              <p class="portfolio-basics__text">design basics</p>
+              <span class="portfolio-basics__line"></span>
+            </div>
+            <p class="portfolio-opacity__title">Дизайн интерьера</p>
+            <p class="portfolio-opacity__text">Современный дизайн интерьера — это решение задач.
+              Задач бюджета, функциональности, красоты и много другого.
+              В создании дизайна интерьера мы используем аналитический
+              подход, он позволяет нам проектировать, как частное жилье,
+              так и офисы, кафе, рестораны, бары, галереи, музеи и т. д.<br><br>
+              Мы исходим из тех задач, которые перед нами ставит клиент
+              и пространство интерьера. Думаем о том, как рационально
+              использовать бюджет на реализацию и создать уникальный
+              дизайн под конкретную задачу.</p>
+            <div class="portfolio-arrow">
+              <p class="portfolio-arrow__title">portfolio</p>
+              <div class="portfolio-arrow__wrapper">
+                <span class="portfolio-arrow__arrow"></span>
+              </div>
+            </div>
           </div>
-          <p class="portfolio__title">Дизайн интерьера</p>
-          <p class="portfolio__text">
-            Современный дизайн интерьера — это решение задач.
-            Задач бюджета, функциональности, красоты и много
-            другого. В создании дизайна интерьера мы используем
-            аналитический подход, он позволяет нам проектировать,
-            как частное жилье, так и офисы, кафе, рестораны, бары,
-            галереи, музеи и т. д.<br><br>
-            Мы исходим из тех задач, которые перед нами ставит
-            клиент и пространство интерьера. Думаем о том, как
-            рационально использовать бюджет на реализацию и
-            создать уникальный дизайн под конкретную задачу.</p>
-          <div class="portfolio-arrow">
-            <p class="portfolio-arrow__text">portfolio</p>
-            <span class="portfolio-arrow__arrow"></span>
+          <div class="portfolio-left-photo">
+            <img class="portfolio-left-photo__photo" src="./img/design-left-photo.jpg" alt="">
           </div>
         </div>
         <div class="portfolio-right-photo">
-          <img class="portfolio-right-photo__photo" src="./img/portfolio-right.jpg" alt="">
+          <img class="portfolio-right-photo__photo" src="./img/design-right-photo.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-archidesign" id="archidesign">
+      <div class="portfolio-slider">
+        <div class="portfolio-content">
+          <div class="portfolio-opacity">
+            <div class="portfolio-basics">
+              <span class="portfolio-basics__line"></span>
+              <p class="portfolio-basics__text">architecture Basics</p>
+              <span class="portfolio-basics__line"></span>
+            </div>
+            <p class="portfolio-opacity__title">Архитектурное проектирование</p>
+            <p class="portfolio-opacity__text">
+              Команда студии ARCHITECTURE DESIGN STUDIO любит 
+              архитектуру любого размера и назначения: от 
+              частных домов до административных, общественных 
+              зданий и торговых центров, от жилых кварталов до 
+              малых архитектурных форм и благоустройства. 
+              Создавая архитектуру, мы делаем не просто проект 
+              и все его стадии, мы думаем о сценариях жизни человека, 
+              который там будет жить, работать, отдыхать, учиться.<br><br>
+              Создание архитектуры — это многослойный процесс, 
+              начинается он с концепции и с каждой стадией уточняется, 
+              детализируется. Мы считаем путь от общего к частному 
+              и аналитический подход к процессу создания формы 
+              опорными точками своего метода проектирования.</p>
+            <div class="portfolio-arrow">
+              <p class="portfolio-arrow__title">portfolio</p>
+              <div class="portfolio-arrow__wrapper">
+                <span class="portfolio-arrow__arrow"></span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-left-photo">
+            <img class="portfolio-left-photo__photo" src="./img/archi-left-photo.jpg" alt="">
+          </div>
+        </div>
+        <div class="portfolio-right-photo">
+          <img class="portfolio-right-photo__photo" src="./img/archi-right-photo.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-fitodesign" id="fitodesign">
+      <div class="portfolio-slider">
+        <div class="portfolio-content">
+          <div class="portfolio-opacity">
+            <div class="portfolio-basics">
+              <span class="portfolio-basics__line"></span>
+              <p class="portfolio-basics__text">design basics</p>
+              <span class="portfolio-basics__line"></span>
+            </div>
+            <p class="portfolio-opacity__title">Фитодизайн</p>
+            <p class="portfolio-opacity__text">
+              Фитодизайн – новое направление в дизайне, 
+              для реализации которого используются живые или 
+              стабилизированные растения. Композиции из лиственных 
+              или цветущих растений способны преобразить любое 
+              пространство и сделать его более уютным и располагающим. 
+              Натуральные растения придают интерьеру свежесть, 
+              расставляют нужные акценты, способны скрыть недостатки 
+              и подчеркнуть достоинства помещения. Плодотворно 
+              сказываются на общем состоянии человека, его 
+              работоспособности и ощущении комфорта.</p>
+            <div class="portfolio-arrow">
+              <p class="portfolio-arrow__title">portfolio</p>
+              <div class="portfolio-arrow__wrapper">
+                <span class="portfolio-arrow__arrow"></span>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-left-photo">
+            <img class="portfolio-left-photo__photo" src="./img/fito-left-photo.jpg" alt="">
+          </div>
+        </div>
+        <div class="portfolio-right-photo">
+          <img class="portfolio-right-photo__photo" src="./img/fito-right-photo.jpg" alt="">
         </div>
       </div>
     </div>
