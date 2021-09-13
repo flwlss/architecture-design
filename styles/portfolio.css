@@ -25,6 +25,18 @@
     font-size: 20px;
   }
 }
+.portfolio-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.portfolio-line__line {
+  width: 1px;
+  height: 8vh;
+  background-color: #ffffff;
+  position: absolute;
+}
 .portfolio-slider {
   display: flex;
 }
@@ -39,7 +51,7 @@
 }
 .portfolio-opacity__title {
   margin: 0;
-  font-size: 40px;
+  font-size: 35px;
   color: #ffffff;
   letter-spacing: 0.1em;
   margin: 1vh 0 2vh 0;
@@ -51,14 +63,14 @@
 }
 .portfolio-opacity__text {
   margin: 0;
-  font-size: 25px;
+  font-size: 22px;
   color: #ffffff;
   width: 51%;
   letter-spacing: 0.1em;
 }
 @media (max-width: 1366px) {
   .portfolio-opacity__text {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .portfolio-arrow {

@@ -40,7 +40,7 @@
   }
 }
 .about-company__text {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
   margin: 0;
 }
@@ -59,7 +59,7 @@
   justify-content: center;
 }
 .about-us__photo-wrapper {
-  width: 50%;
+  width: 45%;
   border: 3px solid #ffffff;
 }
 @media (max-width: 1024px) {
@@ -80,7 +80,7 @@
 }
 .about-us__title {
   margin: 0;
-  font-size: 30px;
+  font-size: 27px;
   color: #ffffff;
   font-weight: bolder;
   text-align: right;
@@ -94,7 +94,7 @@
 .about-us__text {
   margin: 0;
   margin-bottom: 2vh;
-  font-size: 25px;
+  font-size: 20px;
   color: #ffffff;
   text-align: right;
 }

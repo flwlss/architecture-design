@@ -9,11 +9,11 @@
 }
 .progress-item {
   text-align: center;
-  margin: 5vh 0;
+  margin: 4vh 0;
 }
 .progress-item__title {
   margin: 0;
-  font-size: 70px;
+  font-size: 65px;
   color: #ffffff;
 }
 @media (max-width: 1366px) {
@@ -23,7 +23,7 @@
 }
 .progress-item__text {
   margin: 0;
-  font-size: 25px;
+  font-size: 22px;
   color: #ffffff;
   text-transform: uppercase;
 }
