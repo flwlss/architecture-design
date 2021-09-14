@@ -120,7 +120,9 @@
 }
 .stages {
   width: 50%;
-  background: grey;
+  background-image: url(../img/bg-services.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

@@ -125,19 +125,19 @@ closeSix.addEventListener("click", function (evt) {
 });
 
 function design() {
-  document.getElementById('design').style.display="block";
-  document.getElementById('archidesign').style.display="none";
-  document.getElementById('fitodesign').style.display="none";
+  document.getElementById('design').style.display = "block";
+  document.getElementById('archidesign').style.display = "none";
+  document.getElementById('fitodesign').style.display = "none";
 }
 
 function archidesign() {
-  document.getElementById('design').style.display="none";
-  document.getElementById('archidesign').style.display="block";
-  document.getElementById('fitodesign').style.display="none";
+  document.getElementById('design').style.display = "none";
+  document.getElementById('archidesign').style.display = "block";
+  document.getElementById('fitodesign').style.display = "none";
 }
 
 function fitodesign() {
-  document.getElementById('design').style.display="none";
-  document.getElementById('archidesign').style.display="none";
-  document.getElementById('fitodesign').style.display="block";
+  document.getElementById('design').style.display = "none";
+  document.getElementById('archidesign').style.display = "none";
+  document.getElementById('fitodesign').style.display = "block";
 }
