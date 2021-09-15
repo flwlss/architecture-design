@@ -1,9 +1,6 @@
 .progress {
   width: 100%;
   background-image: url(../img/bg-contacts.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .progress-wrapper {
   width: 100%;
