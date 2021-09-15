@@ -64,7 +64,7 @@
 }
 @media (max-width: 1366px) {
   .services__text {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 .services__arrow-wrapper {
@@ -120,7 +120,7 @@
 }
 .stages {
   width: 50%;
-  background-image: url(../img/bg-services.jpg);
+  background-image: url(../img/bg-stages.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -160,7 +160,7 @@
 }
 @media (max-width: 1366px) {
   .stages__text {
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 .form-close-one,

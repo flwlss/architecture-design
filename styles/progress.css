@@ -1,6 +1,9 @@
 .progress {
   width: 100%;
-  background-color: #1F2833;
+  background-image: url(../img/bg-contacts.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .progress-wrapper {
   width: 100%;
@@ -14,7 +17,8 @@
 .progress-item__title {
   margin: 0;
   font-size: 65px;
-  color: #ffffff;
+  color: #1F2833;
+  font-weight: bolder;
 }
 @media (max-width: 1366px) {
   .progress-item__title {
@@ -24,12 +28,13 @@
 .progress-item__text {
   margin: 0;
   font-size: 22px;
-  color: #ffffff;
+  color: #1F2833;
+  font-weight: bolder;
   text-transform: uppercase;
 }
 @media (max-width: 1366px) {
   .progress-item__text {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 .progress-line {
@@ -41,6 +46,6 @@
 .progress-line__line {
   width: 1px;
   height: 13vh;
-  background-color: #fff;
+  background-color: #1F2833;
   position: absolute;
 }
