@@ -52,11 +52,11 @@ var openOne = document.querySelector(".form-one");
 var closeOne = document.querySelector(".form-close-one");
 arrowOne.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openOne.classList.add("form");
+  openOne.classList.add("forma");
 });
 closeOne.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openOne.classList.remove("form");
+  openOne.classList.remove("forma");
 });
 
 
@@ -65,11 +65,11 @@ var openTwo = document.querySelector(".form-two");
 var closeTwo = document.querySelector(".form-close-two");
 arrowTwo.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openTwo.classList.add("form");
+  openTwo.classList.add("forma");
 });
 closeTwo.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openTwo.classList.remove("form");
+  openTwo.classList.remove("forma");
 });
 
 
@@ -78,11 +78,11 @@ var openThree = document.querySelector(".form-three");
 var closeThree = document.querySelector(".form-close-three");
 arrowThree.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openThree.classList.add("form");
+  openThree.classList.add("forma");
 });
 closeThree.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openThree.classList.remove("form");
+  openThree.classList.remove("forma");
 });
 
 
@@ -91,11 +91,11 @@ var openFour = document.querySelector(".form-four");
 var closeFour = document.querySelector(".form-close-four");
 arrowFour.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openFour.classList.add("form");
+  openFour.classList.add("forma");
 });
 closeFour.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openFour.classList.remove("form");
+  openFour.classList.remove("forma");
 });
 
 
@@ -104,11 +104,11 @@ var openFive = document.querySelector(".form-five");
 var closeFive = document.querySelector(".form-close-five");
 arrowFive.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openFive.classList.add("form");
+  openFive.classList.add("forma");
 });
 closeFive.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openFive.classList.remove("form");
+  openFive.classList.remove("forma");
 });
 
 
@@ -117,11 +117,11 @@ var openSix = document.querySelector(".form-six");
 var closeSix = document.querySelector(".form-close-six");
 arrowSix.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openSix.classList.add("form");
+  openSix.classList.add("forma");
 });
 closeSix.addEventListener("click", function (evt) {
   evt.preventDefault();
-  openSix.classList.remove("form");
+  openSix.classList.remove("forma");
 });
 
 function design() {
@@ -141,3 +141,17 @@ function fitodesign() {
   document.getElementById('archidesign').style.display = "none";
   document.getElementById('fitodesign').style.display = "block";
 }
+
+//feedback
+//feedback
+//feedback
+
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend);
+
+  async function formSend(e) {
+    e.preventDefault();
+
+  }
+});
