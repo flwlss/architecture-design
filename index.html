@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="styles/footer.css" />
   <link rel="stylesheet" href="styles/portfolio.css" />
   <link rel="stylesheet" href="styles/services.css" />
-  <link rel="stylesheet" href="styles/formToEmail.css" />
+  <link rel="stylesheet" href="styles/card.css" />
 </head>
 
 <header class="header-background">
@@ -47,7 +47,7 @@
     <div class="container">
       <p class="header-content__subtitle">Современная архитектура</p>
       <p class="header-content__title">ВОПЛОТИ СВОЮ МЕЧТУ В ЖИЗНЬ </p>
-      <button class="header-content__btn">Заказать проект</button>
+      <button class="header-content__btn" onclick="showCard()">Заказать проект</button>
     </div>
   </div>
   <div class="header-bottom">
@@ -693,7 +693,7 @@
             <p class="contacts-email__subtitle">ПОЧТА :</p>
             <p class="contacts-email__text">architecturedesing@mail.ru</p>
           </div>
-          <button class="contacts__button">оставить заявку</button>
+          <button class="contacts__button" onclick="showCard()">оставить заявку</button>
         </div>
         <div class="contacts-numbers">
           <div class="contacts-numbers__wrapper">
@@ -714,24 +714,25 @@
   </section>
   <section style="background-color: rgb(54, 58, 56);">
     <form action="mail.php" method="POST">
-      <legend>Заголовок формы</legend>
+      <div class="hidden-card" id="card">
+        <div class="card" >
+          <div class="card-left">
+            <p class="card-left__title">заказать<br> обратный звонок</p>
+            <button class="card-left__btn" type="submit">отправить</button>
+          </div>
+          <div class="card-right">
+            <div class="card-right__close" onclick="hideCard()"></div>
+            <label class="card-right__title" for="">ваше имя</label>
+            <input class="card-right__input" minlength="2" type="text" id="" name="user_name" required>
 
-      <div class="form-group">
-        <label for="">Введите ваше имя</label>
-        <input type="text" class="form-control" id="" name="user_name" placeholder="Например, Иван">
+            <label class="card-right__title" for="">телефон</label>
+            <input class="card-right__input" maxlength="11" minlength="11" type="tel" class="form-control" id=""
+              name="user_phone" required>
+
+            <p class="card-right__text">МЫ ВАМ ПЕРЕЗВОНИМ<br> ЧЕРЕЗ 5 МИНУТ</p>
+          </div>
+        </div>
       </div>
-    
-      <div class="form-group">
-        <label for="">Введите номер телефона</label>
-        <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
-      </div>
-    
-      <div class="form-group">
-        <label for="">Введите email</label>
-        <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
-      </div>
-    
-      <button type="submit" class="btn btn-primary">Отправить форму</button>
     </form>
   </section>
 
@@ -763,11 +764,11 @@
   <script src="script.js"></script>
   <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>

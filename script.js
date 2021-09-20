@@ -155,3 +155,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
 });
+
+//card
+//card
+//card
+
+function showCard() {
+  document.getElementById('card').style.display = "block";
+}
+
+function hideCard() {
+  document.getElementById('card').style.display = "none";
+}
