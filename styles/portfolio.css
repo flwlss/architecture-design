@@ -1,6 +1,6 @@
 .portfolio {
   width: 100%;
-  background-image: url(../img/bg-portfolio.jpg);
+  background-image: url(../img/backgrounds/bg-portfolio.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   scroll-margin-top: 10vh;
@@ -194,7 +194,7 @@
 }
 .portfolio-popup-bg {
   width: 97%;
-  background-image: url(../img/portfolio-popup-bg.jpg);
+  background-image: url(../img/backgrounds/portfolio-popup-bg.jpg);
   padding: 2vh 0 4vh 3%;
   background-position: center;
   background-repeat: no-repeat;

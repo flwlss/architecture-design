@@ -5,7 +5,7 @@
 }
 .services {
   width: 50%;
-  background-image: url(../img/bg-contacts.jpg);
+  background-image: url(../img/backgrounds/bg-contacts.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,7 +105,7 @@
   transform: rotate(-45deg);
 }
 .stages-opacity {
-  background-image: url(../img/bg-stages.jpg);
+  background-image: url(../img/backgrounds/bg-stages.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 50%;
