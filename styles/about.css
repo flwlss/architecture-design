@@ -1,5 +1,6 @@
 .about {
   width: 100%;
+  background-image: url(../img/about-bg.jpg);
   background-color: grey;
   scroll-margin-top: 10vh;
 }

@@ -208,3 +208,117 @@
 .portfolio-fitodesign {
   display: none;
 }
+
+.portfolio-popup-design-hidden {
+  display: none;
+}
+
+.portfolio-popup-fitodesign-hidden {
+  display: none;
+}
+
+.portfolio-popup-bg {
+  width: 97%;
+  background-image: url(../img/portfolio-popup-bg.jpg);
+  padding: 2vh 0 4vh 3%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  animation-name: fromBottom;
+  animation-duration: 0.6s;
+}
+
+.portfolio-popup-photo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3vh;
+}
+
+.portfolio-popup-photo {
+  width: 437px;
+  margin-right: 3%;
+  display: inline-block;
+  overflow: hidden; 
+  border: 2px solid #ffffff;
+
+  @media (max-width:1366px) {
+    width: 350px;
+  }
+
+  &__photo {
+    width: 100%;
+    transition: 1.5s;
+    display: block;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.portfolio-arrow-popup {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__title {
+    font-size: 18px;
+    color: #5AB9EA;
+    margin: 1vh 0 1vh 10%;
+  }
+
+  &__wrapper {
+    width: 20%; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #5680E9;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    display: block;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      top: -3px;
+    //  right: 70%;
+      background-color: #5680E9;
+      transform: rotate(-45deg);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      top: 3px;
+     // right: 70%;
+      background-color: #5680E9;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@keyframes fromBottom {
+  // 0% {transform: translateX(-2000px);}
+  from {
+   transform: translateY(50%)
+  // width: 300%;
+   }
+ 
+ to {
+   transform: translateY(0px)
+  // width: 100%;
+   }
+ }

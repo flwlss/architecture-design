@@ -36,12 +36,27 @@
   align-items: center;
   justify-content: space-between;
 }
-.footer-socials__wrapper {
-  width: 11%;
+.footer-socials__whatsapp {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/whatsapp.png);
 }
-.footer-socials__wrapper:first-child {
-  width: 13%;
+.footer-socials__whatsapp:hover {
+  background-image: url(../img/icons/whatsapp-hover.png);
 }
-.footer-socials__item {
-  width: 100%;
+.footer-socials__insta {
+  width: 32px;
+  height: 32px;
+  background-image: url(../img/icons/insta.png);
+}
+.footer-socials__insta:hover {
+  background-image: url(../img/icons/insta-hover.png);
+}
+.footer-socials__tg {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/icons/tg.png);
+}
+.footer-socials__tg:hover {
+  background-image: url(../img/icons/tg-hover.png);
 }

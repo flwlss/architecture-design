@@ -11,6 +11,8 @@
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  animation-name: down;
+  animation-duration: 0.5s;
 }
 
 .card-left {
@@ -107,3 +109,14 @@
     letter-spacing: .2em;
   }
 }
+
+@keyframes down {
+  // 0% {transform: translateX(-2000px);}
+  from {
+   margin-top: -100%;
+  }
+ 
+  to {
+   margin-top: 0%;
+  }
+ }

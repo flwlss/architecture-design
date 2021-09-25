@@ -128,24 +128,27 @@ function design() {
   document.getElementById('design').style.display = "block";
   document.getElementById('archidesign').style.display = "none";
   document.getElementById('fitodesign').style.display = "none";
+  document.getElementById('portfolio-popup-fitodesign').style.display = "none";
 }
 
 function archidesign() {
   document.getElementById('design').style.display = "none";
   document.getElementById('archidesign').style.display = "block";
   document.getElementById('fitodesign').style.display = "none";
+  document.getElementById('portfolio-popup-fitodesign').style.display = "none";
+  document.getElementById('portfolio-popup-design').style.display = "none";
 }
 
 function fitodesign() {
   document.getElementById('design').style.display = "none";
   document.getElementById('archidesign').style.display = "none";
   document.getElementById('fitodesign').style.display = "block";
+  document.getElementById('portfolio-popup-design').style.display = "none";
 }
 
 //feedback
 //feedback
 //feedback
-
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('form');
   form.addEventListener('submit', formSend);
@@ -159,11 +162,41 @@ document.addEventListener('DOMContentLoaded', function () {
 //card
 //card
 //card
-
 function showCard() {
   document.getElementById('card').style.display = "block";
 }
 
 function hideCard() {
   document.getElementById('card').style.display = "none";
+}
+
+//portfolio
+//portfolio
+//portfolio
+function showDesignPortfolio() {
+  document.getElementById('design').style.display = "none";
+  document.getElementById('portfolio-popup-design').style.display = "block";
+}
+
+function closeDesignPortfolio() {
+  document.getElementById('design').style.display = "block";
+  document.getElementById('portfolio-popup-design').style.display = "none";
+}
+
+function showFitodesignPortfolio() {
+  document.getElementById('fitodesign').style.display = "none";
+  document.getElementById('portfolio-popup-fitodesign').style.display = "block";
+}
+
+function closeFitodesignPortfolio() {
+  document.getElementById('fitodesign').style.display = "block";
+  document.getElementById('portfolio-popup-fitodesign').style.display = "none";
+}
+
+function showPortfolioCard() {
+  document.getElementById('card-portfolio').style.display = "block";
+}
+
+function hidePortfolioCard() {
+  document.getElementById('card-portfolio').style.display = "none";
 }
