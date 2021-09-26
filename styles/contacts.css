@@ -25,6 +25,8 @@
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  cursor: pointer;
+  border: none;
 }
 @media (max-width: 1366px) {
   .contacts__button {

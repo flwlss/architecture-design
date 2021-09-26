@@ -201,7 +201,7 @@
   background-size: cover;
   display: block;
   animation-name: fromBottom;
-  animation-duration: 0.6s;
+  animation-duration: 1.5s;
 }
 .portfolio-popup-photo-wrapper {
   display: flex;
