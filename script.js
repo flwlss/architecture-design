@@ -6,6 +6,7 @@ const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
+    document.getElementById('menu-toggle').checked = false;
     const blockID = anchor.getAttribute('href')
     document.querySelector('' + blockID).scrollIntoView({
       behavior: "smooth",
@@ -199,4 +200,14 @@ function showPortfolioCard() {
 
 function hidePortfolioCard() {
   document.getElementById('card-portfolio').style.display = "none";
+}
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("headerNav").style.cssText = `background-color: white; transition: 0.5s`
+  } else {
+    document.getElementById("headerNav").style.cssText = `background-color: ; transition: 0.5s`
+  }
 }

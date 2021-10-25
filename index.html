@@ -19,7 +19,7 @@
 </head>
 
 <header class="header-background">
-  <nav class="header-nav">
+  <nav class="header-nav" id="headerNav">
     <a href="#header" class="header-nav__logo-wrapper">
       <img class="header-nav__logo" src="./img/logo.png" alt="Architecture Design">
       <p class="header-nav__name">ARCHITECTURE <br>DESIGN STUDIO</p>
@@ -38,8 +38,32 @@
         <li class="header-nav__item">контакты</li>
       </a>
       <a href="https://wa.me/+79234792799" target="blank">
-        <li class="header-nav__item">+7 (923) 479-27-99</li>
+        <li class="header-nav__item-tel">+7 (923) 479-27-99</li>
       </a>
+    </div>
+    <div class="burger-menu">
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-btn" for="menu-toggle">
+        <span></span>
+      </label>
+
+      <ul class="menubox">
+        <div
+          style="height: 25vh; justify-content: space-between; display: flex; flex-direction: column; margin-left: 50px;">
+          <a href="#about">
+            <li class="header-nav__item-burger">о нас</li>
+          </a>
+          <a href="#portfolio">
+            <li class="header-nav__item-burger">портфолио</li>
+          </a>
+          <a href="#services">
+            <li class="header-nav__item-burger">услуги и цены</li>
+          </a>
+          <a href="#contacts">
+            <li class="header-nav__item-burger">контакты</li>
+          </a>
+        </div>
+      </ul>
     </div>
   </nav>
   <div id="header" class="header-top">
@@ -877,8 +901,7 @@
           <a class="footer-socials__whatsapp" href="https://wa.me/+79234792799" target="blank">
             <!-- <img class="footer-socials__item" src="./img/icons/whatsapp.svg" alt="WhatsApp"> -->
           </a>
-          <a class="footer-socials__insta" href="https://www.instagram.com/architecturedesign__studio/"
-            target="blank">
+          <a class="footer-socials__insta" href="https://www.instagram.com/architecturedesign__studio/" target="blank">
             <!-- <img class="footer-socials__item" src="./img/icons/insta.svg" alt="Instagram"> -->
           </a>
           <a class="footer-socials__tg" href="https://t.me/fooyzi" target="blank">
